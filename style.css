@@ -1,0 +1,52 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #111;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    z-index: 10;
+}
+
+#player {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #00ffcc;
+    border-radius: 50%;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: left 0.1s ease-out; /* Transição suave para mover o jogador */
+}
+
+/* Estilo das estrelas */
+.star {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: fall 3s linear forwards;
+    animation-delay: 0s;
+    left: 0;
+}
+
+/* Animação das estrelas caindo */
+@keyframes fall {
+}
